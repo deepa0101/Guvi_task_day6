@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class uberPrice{
+            constructor(price_perKM,distance){
+                this.price_perKM = price_perKM
+                this.distance = distance
+                this.totalprice = this.price_perKM * distance
+                console.log(`Price for ride ${this.totalprice}`)
+            }
+        
+        applyDiscount(){
+                let discount=(25/this.totalprice)*100
+                console.log(discount)
+                let priceAfterDiscount=this.totalprice-discount
+                return `As a privelge customer , i got an discount and Price After Discount is Rs.${priceAfterDiscount.toFixed()}`
+
+            }
+        }
+
+      let p1  = new uberPrice(10,25)
+      console.log(p1.applyDiscount())
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class circle {
+            constructor(radius,color){
+                this.radius=radius;
+                this.color=color
+            }
+            getRadius(){
+                return this.radius
+            }
+            setRadius(radius){
+                return this.radius = radius
+            }
+            getColor(){
+                return this.color
+            }
+            setColor(color){
+                return this.color = color
+            }
+            getArea(){
+                return `area is ${(Math.PI * Math.pow(this.radius,2)).toFixed(2)}`
+            }
+            getCircumference(){
+                return`circumference is ${(2*Math.PI * this.radius).toFixed(2)}`
+            }
+        }
+    let c1 = new circle(4,"green");
+    let s=[c1.getColor(),c1.getRadius()]
+     console.log(s.toString())
+     console.log(c1.getArea())
+     console.log(c1.getCircumference())
+     console.log(c1.setRadius("5"));
+     console.log(c1.setColor("green"))
+     console.log(c1.getCircumference())
+
+    </script>
+</body>
+</html>

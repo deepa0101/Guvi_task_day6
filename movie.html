@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class movie {
+            constructor(title,studio,rating){
+                this.title=title;
+                this.studio=studio;
+                this.rating=rating;
+                if(this.rating == undefined || null) {
+                    this.rating = "PG"} 
+            }
+            getPG(arr){
+                let arr1 = []
+                for (var i in arr) 
+                {
+                    if(arr[i].rating=="PG")
+                    {
+                        arr1.push(arr[i])
+                    }
+                }
+                console.log(arr1)
+
+            }
+        }
+
+
+        let film1 = new movie("Casino Royale","Eon Productions","PG13")
+        let film2 = new movie("KNJ Royale","KNJ Productions","PG18")
+        let film3 = new movie("KSJ Royale","KSJ Productions","PG13")
+        let film4 = new movie("MYG Royale","MYG Productions")
+        let film5 = new movie("JHS Royale","JHS Productions","PG19")
+        let film6 = new movie("PJM Royale","PJM Productions","PG")
+        let film7 = new movie("KTH Royale","KTH Productions")
+        let film8 = new movie("JJK Royale","JJK Productions","PG13")
+       const arr = [film1,film2,film3,film4,film5,film6,film7,film8]
+       film1.getPG(arr)
+    </script>
+</body>
+</html>

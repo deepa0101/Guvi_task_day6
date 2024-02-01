@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* class car{
+            constructor(name,year){
+                this.name = name,
+                this.year = year
+
+                console.log(name,year)
+            }
+            get_details(){
+                console.log(`current car I own is ${this.name} and I purchased it in ${this.year}`)
+            }
+        }
+
+    let s1 = new car("audi",2021)
+    let s2 = new car("Hyundai")
+    s1.get_details()
+    s2.get_details() */
+    class person{
+        constructor(name,age,address,mailid){
+            this.name = name,
+            this.age = age,
+            this.address = address,
+            this.mailid = mailid
+
+            console.log(name,age,address,mailid)
+        }
+    }
+    let p1 = new person("abc",21,"xyz")
+    console.log(p1)
+    console.log(`name of the person is ${p1.name} who is ${p1.age} years old`)
+
+    let {name,age,place}=p1
+    console.log(name,age)
+    </script>
+</body>
+</html>
